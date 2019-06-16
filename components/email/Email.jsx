@@ -1,37 +1,36 @@
 import Image from "../image";
 import css from "./styles.scss";
 
-const Email = ({ setPage }) => <>
-  <div className={css.header}>
-    <Image src="email.svg" />
-    <p>Mail</p>
-  </div>
+const Email = ({ content, setPage }) => {
+  const t = content.email;
 
-  <div className={css.email}>
-    <p><b>From:</b> Roger Atkins <span>&lt;roger.atkins@abc.com&gt;</span></p>
-    <p><b>To:</b> Jane Dennet <span>&lt;jane.dennet@abc.com&gt;</span></p>
-    <p><b>Received:</b> 17:09pm, July 3rd, 2019</p>
+  return <>
+    <div className={css.header}>
+      <Image src="email.svg" />
+      <p>{t.header}</p>
+    </div>
 
-    <div className={css.divider}></div>
+    <div className={css.email}>
+      <p><b>{t.from}</b> {t.sender_name} <span>{t.sender_email}</span></p>
+      <p><b>{t.to}</b> {t.receiver_name} <span>{t.receiver_email}</span></p>
+      <p><b>{t.received}</b> {t.date}</p>
 
-    <p>Dear Jane,</p>
-    <p>&nbsp;</p>
-    <p>
-      On behalf of ABC we are committed to sustainability.
-      We have been instructed to collect key outcome data of all our portfolio companies.
-      We have therefore enlisted the services of independent platform TrueFootprint who have created a form for you to fill out.
-      Give me a ring if you need any help. See you next week in Paris!
-    </p>
-    <p>&nbsp;</p>
-    <p><a onClick={() => setPage("intro")}>https://tracker.truefootprint.com/5226-e0c2-f094</a></p>
-    <p>&nbsp;</p>
-    <p>Best, Roger.</p>
+      <div className={css.divider}></div>
 
-    <div className={css.divider}></div>
+      <p>{t.para1}</p>
+      <p>&nbsp;</p>
+      <p>{t.para2}</p>
+      <p>&nbsp;</p>
+      <p><a onClick={() => setPage("intro")}>{t.link}</a></p>
+      <p>&nbsp;</p>
+      <p>{t.para3}</p>
 
-    <a className={css.call_to_action}>↑ Reply</a>
-    <a className={css.call_to_action}>→ Forward</a>
-  </div>
-</>;
+      <div className={css.divider}></div>
+
+      <a className={css.call_to_action}>{t.cta1}</a>
+      <a className={css.call_to_action}>{t.cta2}</a>
+    </div>
+  </>;
+}
 
 export default Email;
