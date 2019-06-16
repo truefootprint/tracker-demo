@@ -38,7 +38,7 @@ const Form = ({ setPage }) => {
 
         <div className={css.field}>
           <label></label>
-          <a className={css.call_to_action} onClick={() => setPage("intro")}>Next</a>
+          <a className={css.call_to_action} onClick={() => setPage("thanks")}>Next</a>
         </div>
       </div>
     </Layout>
