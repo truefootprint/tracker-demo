@@ -21,19 +21,21 @@ const Form = ({ content, setPage }) => {
         <p className={css.intro}>{t.intro}</p>
 
 
-        {t.questions.map((question, index) => (<>
-          <div className={css.field}>
-            <label>{question}</label>
-            <input type="text" />
-          </div>
+        {t.questions.map((question, index) => (
+          <div key={`section-${section}-question-${index}`}>
+            <div className={css.field}>
+              <label>{question}</label>
+              <input type="text" />
+            </div>
 
-          <div className={css.field}>
-            <label>{t.secondary[index]}</label>
-            <input type="text" />
-          </div>
+            <div className={css.field}>
+              <label>{t.secondary[index]}</label>
+              <input type="text" />
+            </div>
 
-          <div className={css.spacer}></div>
-        </>))}
+            <div className={css.spacer}></div>
+          </div>
+        ))}
 
 
         <div className={css.field}>
