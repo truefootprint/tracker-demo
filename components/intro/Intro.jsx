@@ -6,13 +6,13 @@ const Intro = ({ content, setPage }) => {
 
   return <Layout>
     <div className={css.intro}>
-      <p>{t.para1}</p>
+      <p dangerouslySetInnerHTML={{__html: t.para1}}></p>
       <p>&nbsp;</p>
-      <p>{t.para2}</p>
-      <p>{t.para3}</p>
-      <p>{t.para4}</p>
+      <p dangerouslySetInnerHTML={{__html: t.para2}}></p>
+      <p dangerouslySetInnerHTML={{__html: t.para3}}></p>
+      <p dangerouslySetInnerHTML={{__html: t.para4}}></p>
       <p>&nbsp;</p>
-      <p>{t.para5}</p>
+      <p dangerouslySetInnerHTML={{__html: t.para5}}></p>
 
       <a className={css.call_to_action} onClick={() => setPage("login")}>{t.cta}</a>
     </div>

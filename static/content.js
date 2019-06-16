@@ -32,7 +32,7 @@ export default {
 
     para2: `Asset manager XYZ invited you to provide them with outcome numbers using the TrueFootprint Tracker.`,
     para3: `Read more <a>here</a> about why asset managers want to have this data.`,
-    para4: `The data you enter is yours. By submitting you give us a license to sell this data to XYZ and others. Read <a>here</a> the full T&C.`,
+    para4: `The data you enter is yours. By submitting you give us a license to sell this data to XYZ and others. Read <a>here</a> the full T&amp;C.`,
 
     para5: `We have already created a basic company profile for you based on data provided by XYZ.`,
 
