@@ -1,44 +1,44 @@
+import { useState } from "react";
 import Layout from "../layout";
 import css from "./styles.scss";
 
 const Form = ({ content, setPage }) => {
-  const questions = [
-    "1. Number of deaths of staff and contractors this year:",
-    "2. Recordable injury rate per 100,000 hours worked:",
-    "3. Lost time injuries and illness rate per 100,000 hours worked:",
-    "4. Percentage of board members who are female:",
-    "5. Percentage of executive team members who are female:",
-    "6. Percentage of senior managers who are female:",
-  ];
+  const [section, setSection] = useState(0);
+  const t = content.form[section];
+
+  const submit = () => {
+    if (section + 1 < content.form.length) {
+      setSection(section + 1);
+    } else {
+      setPage("thanks");
+    }
+  };
 
   return (
     <Layout content={content}>
       <div className={css.form}>
-        <p className={css.title}>
-          G1 outcome data - Section 1 - People
-        </p>
+        <p className={css.title}>{t.title}</p>
+        <p className={css.intro}>{t.intro}</p>
 
-        <p className={css.intro}>
-          We need 3 types of outcome data from you.
-          The first type involves People data. These relate to ESG items 3 and 5.
-        </p>
 
-        {questions.map(q => (<>
-
+        {t.questions.map((question, index) => (<>
           <div className={css.field}>
-            <label>{q}</label>
+            <label>{question}</label>
             <input type="text" />
           </div>
+
           <div className={css.field}>
-            <label>Last year:</label>
+            <label>{t.secondary[index]}</label>
             <input type="text" />
           </div>
+
           <div className={css.spacer}></div>
         </>))}
 
+
         <div className={css.field}>
           <label></label>
-          <a className={css.call_to_action} onClick={() => setPage("thanks")}>Next</a>
+          <a className={css.call_to_action} onClick={submit}>{t.cta}</a>
         </div>
       </div>
     </Layout>

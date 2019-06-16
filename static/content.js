@@ -75,7 +75,75 @@ export default {
 
 
 
+  // You can add as many sections and questions as you want.
   form: [
+
+
+    { // section 1
+      title: `G1 outcome data - Section 1 - People`,
+
+      intro: `We need 3 types of outcome data from you.
+              The first type involves People data. These relate to ESG items 3 and 5.`,
+
+      questions: [
+        `1. Number of deaths of staff and contractors this year:`,
+        `2. Recordable injury rate per 100,000 hours worked:`,
+        `3. Lost time injuries and illness rate per 100,000 hours worked:`,
+        `4. Percentage of board members who are female:`,
+        `5. Percentage of executive team members who are female:`,
+        `6. Percentage of senior managers who are female:`,
+      ],
+
+      secondary: [
+        `Last year:`,
+        `Last year:`,
+        `Last year:`,
+        `Last year:`,
+        `Last year:`,
+        `Last year:`,
+      ],
+
+      cta: `Next`,
+    }, // end of section 1
+
+
+
+    { // section 2
+      title: `G1 outcome data - Section 2- Planet`,
+
+      intro: `Next is outcome data for Planet.
+              These relate to ESG items 6, 7, 12, 13, 14, and 15.`,
+
+      questions: [
+        `1. Greenhouse gas emissions per $100M turnover (scope 1) this year:`,
+        `2. Greenhouse gas emissions per ton of product`,
+        `3. Energy use per ton of product:`,
+        `4. Water use per ton of product:`,
+        `5. Hazardous waste per ton of product:`,
+        `6. Disposed waste per ton of product:`,
+        `7. Percentage of energy from renewable sources:`,
+        `8. Percentage of water recycled:`,
+        `9. Percentage increase in biodiversity:`,
+        `10. Total amount paid in environmental fines:`,
+      ],
+
+      secondary: [
+        `Last year:`,
+        `Last year:`,
+        `Last year:`,
+        `Last year:`,
+        `Last year:`,
+        `Last year:`,
+        `Last year:`,
+        `Last year:`,
+        `Last year:`,
+        `Last year:`,
+      ],
+
+      cta: `Next`,
+    }, // end of section 2
+
+
 
   ],
 
