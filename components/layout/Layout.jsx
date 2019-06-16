@@ -1,7 +1,7 @@
-import css from "./styles.scss";
+import "./reset.scss";
 
 const Layout = ({ children }) => <>
-  <p className={css.hello}>Hello from Layout</p>
+  <p>Hello from Layout</p>
 
   {children}
 </>;
