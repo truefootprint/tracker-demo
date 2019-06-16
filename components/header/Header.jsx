@@ -3,7 +3,7 @@ import css from "./styles.scss";
 
 const Header = () => (
   <div className={css.header}>
-    <a className={css.logo} href="/">
+    <a className={css.logo} href=".">
       <Logo variant="stackedText" />
     </a>
 
@@ -12,8 +12,8 @@ const Header = () => (
     </p>
 
     <nav className={css.nav}>
-      <a href="/">My account</a>
-      <a href="/">Help</a>
+      <a>My account</a>
+      <a>Help</a>
     </nav>
   </div>
 );

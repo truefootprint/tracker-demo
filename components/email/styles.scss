@@ -1,0 +1,65 @@
+@import "../layout/color.scss";
+
+.email {
+  width: 60rem;
+  margin: auto;
+  margin-top: 8rem;
+
+  p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+
+    &.title {
+      font-size: 2rem;
+      color: $accent2-600;
+      margin-bottom: 1rem;
+    }
+
+    &.intro {
+      margin-bottom: 3rem;
+    }
+
+    span {
+      color: $neutral-600;
+    }
+
+    b {
+      font-weight: bold;
+    }
+  }
+}
+
+.header {
+  border-bottom: 1px solid $neutral-300;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  background: $neutral-100;
+
+  p {
+    font-size: 3rem;
+    color: #00B9F1;
+    padding-left: 2rem;
+  }
+}
+
+.divider {
+  width: 100%;
+  border-bottom: 1px solid $neutral-300;
+  margin: 3rem 0;
+}
+
+.call_to_action {
+  display: inline-block;
+  font-size: 1.1em;
+  padding: 0.7rem;
+  color: black;
+  background: $neutral-100;
+  border: 1px solid $neutral-400;
+  text-align: center;
+  cursor: pointer;
+
+  width: 7rem;
+  margin-right: 2rem;
+}
