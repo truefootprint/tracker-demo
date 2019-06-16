@@ -1,7 +1,7 @@
 import Layout from "../layout";
 import css from "./styles.scss";
 
-const Intro = () => (
+const Intro = ({ setPage }) => (
   <Layout>
     <div className={css.intro}>
       <p>Hello G1,</p>
@@ -12,7 +12,7 @@ const Intro = () => (
       <p>&nbsp;</p>
       <p>We have already created a basic company profile for you based on data provided by XYZ.</p>
 
-      <a className={css.call_to_action}>Start</a>
+      <a className={css.call_to_action} onClick={() => setPage("login")}>Start</a>
     </div>
   </Layout>
 );
