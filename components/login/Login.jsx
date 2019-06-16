@@ -15,17 +15,17 @@ const Login = ({ content, setPage }) => {
 
         <div className={css.field}>
           <label>{t.label1}</label>
-          <input type="text" value={t.value1} placeholder={t.place1} />
+          <input type="text" defaultValue={t.value1} placeholder={t.place1} />
         </div>
 
         <div className={css.field}>
           <label>{t.label2}</label>
-          <input type="text" value={t.value2} placeholder={t.place2} />
+          <input type="text" defaultValue={t.value2} placeholder={t.place2} />
         </div>
 
         <div className={css.field}>
           <label>{t.label3}</label>
-          <input type="password" value={t.value3} placeholder={t.place3} autocomplete="new-password" />
+          <input type="password" defaultValue={t.value3} placeholder={t.place3} autoComplete="new-password" />
         </div>
 
         <div className={css.field}>
