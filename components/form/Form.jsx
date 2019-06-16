@@ -12,7 +12,7 @@ const Form = ({ setPage }) => {
   ];
 
   return (
-    <Layout>
+    <Layout content={content}>
       <div className={css.form}>
         <p className={css.title}>
           G1 outcome data - Section 1 - People

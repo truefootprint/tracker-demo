@@ -1,8 +1,8 @@
 import Layout from "../layout";
 import css from "./styles.scss";
 
-const Login = ({ setPage }) => (
-  <Layout>
+const Login = ({ content, setPage }) => (
+  <Layout content={content}>
     <div className={css.login}>
       <p className={css.title}>
         Create first login

@@ -1,4 +1,13 @@
 export default {
+  header: {
+    title: `TrueFootprint Tracker`,
+
+    link1: `My account`,
+    link2: `Help`,
+  },
+
+
+
   email: {
     header: `Mail`,
 
@@ -27,6 +36,9 @@ export default {
     cta1: `↑ Reply`,
     cta2: `→ Forward`,
   },
+
+
+
   intro: {
     para1: `Hello G1,`,
 
@@ -38,9 +50,15 @@ export default {
 
     cta: `Start`,
   },
+
+
+
   form: [
 
   ],
+
+
+
   thanks: {
 
   },

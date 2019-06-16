@@ -2,8 +2,8 @@ import Layout from "../layout";
 import Image from "../image";
 import css from "./styles.scss";
 
-const Thanks = ({ setPage }) => (
-  <Layout>
+const Thanks = ({ content, setPage }) => (
+  <Layout content={content}>
     <div className={css.thanks}>
       <p className={css.title}>
         Thank you!

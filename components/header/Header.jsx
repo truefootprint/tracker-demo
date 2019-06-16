@@ -1,21 +1,23 @@
 import Logo from "../logo";
 import css from "./styles.scss";
 
-const Header = () => (
-  <div className={css.header}>
-    <a className={css.logo} href=".">
-      <Logo variant="stackedText" />
-    </a>
+const Header = ({ content }) => {
+  const t = content.header;
 
-    <p className={css.title}>
-      TrueFootprint Tracker
-    </p>
+  return (
+    <div className={css.header}>
+      <a className={css.logo} href=".">
+        <Logo variant="stackedText" />
+      </a>
 
-    <nav className={css.nav}>
-      <a>My account</a>
-      <a>Help</a>
-    </nav>
-  </div>
-);
+      <p className={css.title}>{t.title}</p>
+
+      <nav className={css.nav}>
+        <a>{t.link1}</a>
+        <a>{t.link2}</a>
+      </nav>
+    </div>
+  );
+};
 
 export default Header;
