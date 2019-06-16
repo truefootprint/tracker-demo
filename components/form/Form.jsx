@@ -1,7 +1,7 @@
 import Layout from "../layout";
 import css from "./styles.scss";
 
-const Form = ({ setPage }) => {
+const Form = ({ content, setPage }) => {
   const questions = [
     "1. Number of deaths of staff and contractors this year:",
     "2. Recordable injury rate per 100,000 hours worked:",

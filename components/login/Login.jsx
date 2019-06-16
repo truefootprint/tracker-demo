@@ -1,36 +1,40 @@
 import Layout from "../layout";
 import css from "./styles.scss";
 
-const Login = ({ content, setPage }) => (
-  <Layout content={content}>
-    <div className={css.login}>
-      <p className={css.title}>
-        Create first login
-      </p>
+const Login = ({ content, setPage }) => {
+  const t = content.login;
 
-      <p>Multiple people at G1 can have logins. You can create the first one now for yourself.</p>
+  return (
+    <Layout content={content}>
+      <div className={css.login}>
+        <p className={css.title}>
+          Create first login
+        </p>
 
-      <div className={css.field}>
-        <label>Company name:</label>
-        <input type="text" value="G1" />
+        <p>Multiple people at G1 can have logins. You can create the first one now for yourself.</p>
+
+        <div className={css.field}>
+          <label>{t.label1}</label>
+          <input type="text" value={t.value1} placeholder={t.place1} />
+        </div>
+
+        <div className={css.field}>
+          <label>{t.label2}</label>
+          <input type="text" value={t.value2} placeholder={t.place2} />
+        </div>
+
+        <div className={css.field}>
+          <label>{t.label3}</label>
+          <input type="password" value={t.value3} placeholder={t.place3} autocomplete="new-password" />
+        </div>
+
+        <div className={css.field}>
+          <label></label>
+          <a className={css.call_to_action} onClick={() => setPage("form")}>{t.cta}</a>
+        </div>
       </div>
-
-      <div className={css.field}>
-        <label>Email address:</label>
-        <input type="text" placeholder="for example janedoe@g1.com" />
-      </div>
-
-      <div className={css.field}>
-        <label>Create password:</label>
-        <input type="password" autocomplete="new-password" />
-      </div>
-
-      <div className={css.field}>
-        <label></label>
-        <a className={css.call_to_action} onClick={() => setPage("form")}>Create login</a>
-      </div>
-    </div>
-  </Layout>
-);
+    </Layout>
+  );
+};
 
 export default Login;

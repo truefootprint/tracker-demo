@@ -53,6 +53,28 @@ export default {
 
 
 
+  login: {
+    title: `Create first login`,
+
+    para: `Multiple people at G1 can have logins. You can create the first one now for yourself.`,
+
+    label1: `Company name:`,
+    label2: `Email address:`,
+    label3: `Create password:`,
+
+    value1: `G1`,
+    value2: ``,
+    value3: ``,
+
+    place1: ``,
+    place2: `for example janedoe@g1.com`,
+    place3: ``,
+
+    cta: `Create login`,
+  },
+
+
+
   form: [
 
   ],
