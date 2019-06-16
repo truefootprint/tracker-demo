@@ -8,6 +8,7 @@ const Form = ({ content, setPage }) => {
 
   const submit = () => {
     if (section + 1 < content.form.length) {
+      window.scrollTo(0, 0);
       setSection(section + 1);
     } else {
       setPage("thanks");
