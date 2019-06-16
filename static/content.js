@@ -156,9 +156,9 @@ export default {
     para2: `We have notified asset company XYZ you have made these submissions.`,
     para3: `Asset managers really like data that has been verified independently by an auditor. If you already have your annual report audited by a third party, please select the logo of yours and you can invite them to audit these numbers.`,
 
-    image1: `email.svg`,
-    image2: `email.svg`,
-    image3: `email.svg`,
-    image4: `email.svg`,
+    image1: `kpmg.svg`,
+    image2: `deloitte.svg`,
+    image3: `pwc.svg`,
+    image4: `ey.svg`,
   },
 };

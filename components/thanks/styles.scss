@@ -22,4 +22,9 @@
   display: flex;
   justify-content: space-between;
   margin-top: 8rem;
+
+  img {
+    max-width: 7rem;
+    max-height: 7rem;
+  }
 }
