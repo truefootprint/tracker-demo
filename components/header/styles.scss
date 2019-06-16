@@ -1,0 +1,31 @@
+@import "../layout/color.scss";
+
+.header {
+  margin: auto;
+  box-sizing: border-box;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  zoom: 0.8;
+}
+
+.title {
+  font-size: 2.5rem;
+}
+
+.nav {
+  width: 13.9rem;
+  border: 1px solid $neutral-300;
+  text-align: center;
+  margin-right: 1rem;
+
+  a {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0.5rem 1.5rem;
+  }
+}
