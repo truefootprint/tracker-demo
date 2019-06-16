@@ -1,0 +1,63 @@
+@import "../layout/color.scss";
+
+.form {
+  width: 60rem;
+  margin: auto;
+  margin-top: 8rem;
+
+  p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+
+    &.title {
+      font-size: 2rem;
+      color: $accent2-600;
+      margin-bottom: 1rem;
+    }
+
+    &.intro {
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+.field {
+  label {
+    display: inline-block;
+    width: 35rem;
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    text-align: right;
+    padding-right: 3rem;
+    box-sizing: border-box;
+  }
+
+  input {
+    width: 6em;
+    font-size: 1.2rem;
+    border: 1px solid $neutral-600;
+
+    &::placeholder {
+      color: $neutral-600;
+    }
+  }
+}
+
+.spacer {
+  height: 4rem;
+}
+
+.call_to_action {
+  display: inline-block;
+  font-size: 1.1em;
+  padding: 0.5rem;
+  color: black;
+  background: $primary-200;
+  border: 1px solid $primary-600;
+  border-radius: 0.2em;
+  text-align: center;
+  cursor: pointer;
+
+  width: 3.5rem;
+  margin: 1rem 0 8rem 2.7rem;
+}

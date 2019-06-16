@@ -1,7 +1,7 @@
 import Layout from "../layout";
 import css from "./styles.scss";
 
-const Login = () => (
+const Login = ({ setPage }) => (
   <Layout>
     <div className={css.login}>
       <p className={css.title}>
@@ -27,7 +27,7 @@ const Login = () => (
 
       <div className={css.field}>
         <label></label>
-        <a className={css.call_to_action}>Create login</a>
+        <a className={css.call_to_action} onClick={() => setPage("form")}>Create login</a>
       </div>
     </div>
   </Layout>
