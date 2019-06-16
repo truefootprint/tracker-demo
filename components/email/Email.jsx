@@ -1,9 +1,9 @@
-import Layout from "../layout";
+import Image from "../image";
 import css from "./styles.scss";
 
 const Email = ({ setPage }) => <>
   <div className={css.header}>
-    <img src="/static/email.svg" />
+    <Image src="email.svg" />
     <p>Mail</p>
   </div>
 
