@@ -2,27 +2,29 @@ import Layout from "../layout";
 import Image from "../image";
 import css from "./styles.scss";
 
-const Thanks = ({ content, setPage }) => (
-  <Layout content={content}>
-    <div className={css.thanks}>
-      <p className={css.title}>
-        Thank you!
-      </p>
+const Thanks = ({ content, setPage }) => {
+  const t = content.thanks;
 
-      <p>Your entries have been stored.</p>
-      <p>&nbsp;</p>
-      <p>We have notified asset company XYZ you have made these submissions.</p>
-      <p>&nbsp;</p>
-      <p>Asset managers really like data that has been verified independently by an auditor. If you already have your annual report audited by a third party, please select the logo of yours and you can invite them to audit these numbers.</p>
+  return (
+    <Layout content={content}>
+      <div className={css.thanks}>
+        <p className={css.title}>{t.title}</p>
 
-      <div className={css.images}>
-        <Image src="email.svg" />
-        <Image src="email.svg" />
-        <Image src="email.svg" />
-        <Image src="email.svg" />
+        <p>{t.para1}</p>
+        <p>&nbsp;</p>
+        <p>{t.para2}</p>
+        <p>&nbsp;</p>
+        <p>{t.para3}</p>
+
+        <div className={css.images}>
+          <Image src={t.image1} />
+          <Image src={t.image2} />
+          <Image src={t.image3} />
+          <Image src={t.image4} />
+        </div>
       </div>
-    </div>
-  </Layout>
-);
+    </Layout>
+  );
+};
 
 export default Thanks;
