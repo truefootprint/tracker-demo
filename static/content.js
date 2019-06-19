@@ -17,10 +17,10 @@ export default {
 
     to: `To:`,
     receiver_name: `Jane Dennet`,
-    receiver_email: `<jane.dennet@abc.com>`,
+    receiver_email: `<jane.dennet@g1.com>`,
 
     received: `Received:`,
-    date: `17:09pm, July 3rd, 2019`,
+    date: `17:09, July 3rd, 2019`,
 
     para1: `Dear Jane,`,
 
@@ -42,7 +42,7 @@ export default {
   intro: {
     para1: `Hello G1,`,
 
-    para2: `Asset manager XYZ invited you to provide them with outcome numbers using the TrueFootprint Tracker.`,
+    para2: `Asset manager XYZ invited you to provide them with 2018 and 2017 outcome numbers using the TrueFootprint Tracker.`,
     para3: `Read more <a>here</a> about why asset managers want to have this data.`,
     para4: `The data you enter is yours. By submitting you give us a license to sell this data to XYZ and others. Read <a>here</a> the full T&amp;C.`,
 
@@ -79,28 +79,30 @@ export default {
   form: [
 
 
+
     { // section 1
       title: `G1 outcome data - Section 1 - People`,
 
-      intro: `We need 3 types of outcome data from you.
-              The first type involves People data. These relate to ESG items 3 and 5.`,
+      intro: `We need 2 types of outcome data from you.
+              The first type involves People data. These relate to Sustainable Development Goals 3 and 5.`,
 
       questions: [
-        `1. Number of deaths of staff and contractors this year:`,
-        `2. Recordable injury rate per 100,000 hours worked:`,
-        `3. Lost time injuries and illness rate per 100,000 hours worked:`,
-        `4. Percentage of board members who are female:`,
-        `5. Percentage of executive team members who are female:`,
-        `6. Percentage of senior managers who are female:`,
+        `1. Percentage of board members who are female in 2018:`,
+        `2. Percentage of executive team members who are female:`,
+        `3. Percentage of senior managers who are female:`,
+        `4. Number of deaths of staff and contractors:`,
+        `5. Recordable injury rate per 100,000 hours worked:`,
+        `6. Lost time injuries and illness rate per 100,000 hours worked:`,
+
       ],
 
       secondary: [
-        `Last year:`,
-        `Last year:`,
-        `Last year:`,
-        `Last year:`,
-        `Last year:`,
-        `Last year:`,
+        `2017:`,
+        `2017:`,
+        `2017:`,
+        `2017:`,
+        `2017:`,
+        `2017:`,
       ],
 
       cta: `Next`,
@@ -112,32 +114,36 @@ export default {
       title: `G1 outcome data - Section 2- Planet`,
 
       intro: `Next is outcome data for Planet.
-              These relate to ESG items 6, 7, 12, 13, 14, and 15.`,
+              These relate to Sustainable Development Goals 6, 7, 12, 13, 14, and 15.`,
 
       questions: [
-        `1. Greenhouse gas emissions per $100M turnover (scope 1) this year:`,
-        `2. Greenhouse gas emissions per ton of product`,
-        `3. Energy use per ton of product:`,
-        `4. Water use per ton of product:`,
-        `5. Hazardous waste per ton of product:`,
-        `6. Disposed waste per ton of product:`,
-        `7. Percentage of energy from renewable sources:`,
-        `8. Percentage of water recycled:`,
-        `9. Percentage increase in biodiversity:`,
-        `10. Total amount paid in environmental fines:`,
+        `1. Total greenhouse gas emissions (scope 1) in 2018:`,
+        `2. Total revenues in USD in 2018:`,
+        `3. Total ore production in metric tonnes:`,
+        `4. Total energy use in MwH:`,
+        `5. Total water use:`,
+        `6. Total hazardous waste:`,
+        `7. Total disposed waste:`,
+        `8. Percentage of energy from renewable sources:`,
+        `9. Percentage of water recycled:`,
+        `10. Percentage increase in biodiversity:`,
+        `11. Total amount paid in environmental fines:`,
       ],
 
+
+
       secondary: [
-        `Last year:`,
-        `Last year:`,
-        `Last year:`,
-        `Last year:`,
-        `Last year:`,
-        `Last year:`,
-        `Last year:`,
-        `Last year:`,
-        `Last year:`,
-        `Last year:`,
+        `2017:`,
+        `2017:`,
+        `2017:`,
+        `2017:`,
+        `2017:`,
+        `2017:`,
+        `2017:`,
+        `2017:`,
+        `2017:`,
+        `2017:`,
+        `2017:`,
       ],
 
       cta: `Next`,
