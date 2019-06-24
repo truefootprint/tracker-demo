@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Layout from "../layout";
+import Image from "../image";
 import css from "./styles.scss";
 
 const Form = ({ content, setPage }) => {
@@ -21,6 +22,9 @@ const Form = ({ content, setPage }) => {
         <p className={css.title}>{t.title}</p>
         <p className={css.intro}>{t.intro}</p>
 
+        <div className={`${css.icons} ${t.icons.length > 4 && css.full_width}`}>
+          {t.icons.map((src, index) => <Image key={`icon-${index}`} src={src} />)}
+        </div>
 
         {t.questions.map((question, index) => (
           <div key={`section-${section}-question-${index}`}>

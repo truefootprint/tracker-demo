@@ -86,6 +86,11 @@ export default {
       intro: `We need 2 types of outcome data from you.
               The first type involves People data. These relate to Sustainable Development Goals 3 and 5.`,
 
+      icons: [
+        `sustainable-development-goals/good-health-and-well-being.png`,
+        `sustainable-development-goals/gender-equality.png`,
+      ],
+
       questions: [
         `1. Percentage of board members who are female in 2018:`,
         `2. Percentage of executive team members who are female:`,
@@ -116,6 +121,15 @@ export default {
       intro: `Next is outcome data for Planet.
               These relate to Sustainable Development Goals 6, 7, 12, 13, 14, and 15.`,
 
+      icons: [
+        `sustainable-development-goals/clean-water-and-sanitation.png`,
+        `sustainable-development-goals/affordable-and-clean-energy.png`,
+        `sustainable-development-goals/responsible-consumption-and-production.png`,
+        `sustainable-development-goals/climate-action.png`,
+        `sustainable-development-goals/life-below-water.png`,
+        `sustainable-development-goals/life-on-land.png`,
+      ],
+
       questions: [
         `1. Total greenhouse gas emissions (scope 1) in 2018:`,
         `2. Total revenues in USD in 2018:`,
@@ -129,8 +143,6 @@ export default {
         `10. Percentage increase in biodiversity:`,
         `11. Total amount paid in environmental fines:`,
       ],
-
-
 
       secondary: [
         `2017:`,
