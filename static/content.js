@@ -144,6 +144,8 @@ export default {
         `11. Total amount paid in environmental fines:`,
       ],
 
+
+
       secondary: [
         `2017:`,
         `2017:`,
@@ -162,7 +164,72 @@ export default {
     }, // end of section 2
 
 
+    { // section 3
+      title: `G1 outcome data - Section 3 - Prosperity`,
 
+      intro: `The Prosperity questions relate to Sustainable Development Goals 8, 9, 10 and 11.`,
+
+      icons: [],
+
+      questions: [
+        `1. Percentage of suppliers that are SMEs in 2018:`,
+        `2. Percentage of in-country procurement:`,
+        `3. Percentage of employees covered by collective bargaining agreements:`,
+      ],
+
+      secondary: [
+        `2017:`,
+        `2017:`,
+        `2017:`,
+
+      ],
+
+      cta: `Next`,
+    }, // end of section 3
+
+
+    { // section 4
+      title: `G1 outcome data - Section 4 - Peace`,
+
+      intro: `The Peace questions relate to Sustainable Development Goal 16.`,
+
+      icons: [],
+
+      questions: [
+        `1. Percentage of identified child labour cases dealt with successfully within 12 months in 2018:`,
+        `2. Percentage of identified human rights cases dealt with successfully within 12 months:`,
+        `3. Percentage of conflicts with indigenous communities dealt with successfully in 12 months:`,
+      ],
+
+      secondary: [
+        `2017:`,
+        `2017:`,
+        `2017:`,
+      ],
+
+      cta: `Next`,
+    }, // end of section 4
+
+
+    { // section 5
+      title: `G1 outcome data - Section 5 - Partnerships`,
+
+      intro: `The Partnerships questions relate to Sustainable Development Goals 1, 2, 4 and 17.`,
+
+      icons: [],
+
+      questions: [
+        `1. Partnerships spend as percentage of revenues in 2018:`,
+        `2. Donated employee hours per 200,000 hours worked:`,
+      ],
+
+      secondary: [
+        `2017:`,
+        `2017:`,
+      ],
+
+      cta: `Next`,
+    }, // end of section 5
   ],
 
 
