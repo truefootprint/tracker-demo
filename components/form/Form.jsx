@@ -16,6 +16,12 @@ const Form = ({ content, setPage }) => {
     }
   };
 
+  const goal = (src) => {
+    const number = src.split("/")[1].split("-")[0];
+
+    return `https://sustainabledevelopment.un.org/sdg${number}`
+  };
+
   return (
     <Layout content={content}>
       <div className={css.form}>
@@ -23,7 +29,9 @@ const Form = ({ content, setPage }) => {
         <p className={css.intro}>{t.intro}</p>
 
         <div className={`${css.icons} ${t.icons.length > 4 && css.full_width}`}>
-          {t.icons.map((src, index) => <Image key={`icon-${index}`} src={src} />)}
+            {t.icons.map(src => (
+              <a key={src} href={goal(src)} target="_blank"><Image src={src} /></a>
+            ))}
         </div>
 
         {t.questions.map((question, index) => (

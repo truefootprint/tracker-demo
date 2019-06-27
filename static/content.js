@@ -87,8 +87,8 @@ export default {
               The first type involves People data. These relate to Sustainable Development Goals 3 and 5.`,
 
       icons: [
-        `sustainable-development-goals/good-health-and-well-being.png`,
-        `sustainable-development-goals/gender-equality.png`,
+        `sustainable-development-goals/3-good-health-and-well-being.png`,
+        `sustainable-development-goals/5-gender-equality.png`,
       ],
 
       questions: [
@@ -122,12 +122,12 @@ export default {
               These relate to Sustainable Development Goals 6, 7, 12, 13, 14, and 15.`,
 
       icons: [
-        `sustainable-development-goals/clean-water-and-sanitation.png`,
-        `sustainable-development-goals/affordable-and-clean-energy.png`,
-        `sustainable-development-goals/responsible-consumption-and-production.png`,
-        `sustainable-development-goals/climate-action.png`,
-        `sustainable-development-goals/life-below-water.png`,
-        `sustainable-development-goals/life-on-land.png`,
+        `sustainable-development-goals/6-clean-water-and-sanitation.png`,
+        `sustainable-development-goals/7-affordable-and-clean-energy.png`,
+        `sustainable-development-goals/12-responsible-consumption-and-production.png`,
+        `sustainable-development-goals/13-climate-action.png`,
+        `sustainable-development-goals/14-life-below-water.png`,
+        `sustainable-development-goals/15-life-on-land.png`,
       ],
 
       questions: [
@@ -143,8 +143,6 @@ export default {
         `10. Percentage increase in biodiversity:`,
         `11. Total amount paid in environmental fines:`,
       ],
-
-
 
       secondary: [
         `2017:`,
@@ -164,12 +162,18 @@ export default {
     }, // end of section 2
 
 
+
     { // section 3
       title: `G1 outcome data - Section 3 - Prosperity`,
 
       intro: `The Prosperity questions relate to Sustainable Development Goals 8, 9, 10 and 11.`,
 
-      icons: [],
+      icons: [
+        `sustainable-development-goals/8-decent-work-and-economic-growth.png`,
+        `sustainable-development-goals/9-industry-innovation-and-infrastructure.png`,
+        `sustainable-development-goals/10-reduced-inequalities.png`,
+        `sustainable-development-goals/11-sustainable-cities-and-communities.png`,
+      ],
 
       questions: [
         `1. Percentage of suppliers that are SMEs in 2018:`,
@@ -193,7 +197,9 @@ export default {
 
       intro: `The Peace questions relate to Sustainable Development Goal 16.`,
 
-      icons: [],
+      icons: [
+        `sustainable-development-goals/16-peace-justice-and-strong-institutions.png`,
+      ],
 
       questions: [
         `1. Percentage of identified child labour cases dealt with successfully within 12 months in 2018:`,
@@ -216,7 +222,12 @@ export default {
 
       intro: `The Partnerships questions relate to Sustainable Development Goals 1, 2, 4 and 17.`,
 
-      icons: [],
+      icons: [
+        `sustainable-development-goals/1-no-poverty.png`,
+        `sustainable-development-goals/2-zero-hunger.png`,
+        `sustainable-development-goals/4-quality-education.png`,
+        `sustainable-development-goals/17-partnerships-for-the-goals.png`,
+      ],
 
       questions: [
         `1. Partnerships spend as percentage of revenues in 2018:`,
