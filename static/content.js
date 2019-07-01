@@ -80,7 +80,7 @@ export default {
     { // section 1
       title: `G1 outcome data - Section 1 - People`,
 
-      intro: `We need 2 types of outcome data from you.
+      intro: `We need 5 types of outcome data from you.
               The first type involves People data. These relate to Sustainable Development Goals 3 and 5.`,
 
       icons: [
@@ -246,38 +246,7 @@ export default {
     { // section 1
       title: `G1 outcome data - Section 1 - Environment`,
 
-      intro: `We need 2 types of outcome data from you. The first type involves Environment data.`,
-
-      icons: [],
-
-      questions: [
-        `1. Percentage of board members who are female in 2018:`,
-        `2. Percentage of executive team members who are female:`,
-        `3. Percentage of senior managers who are female:`,
-        `4. Number of deaths of staff and contractors:`,
-        `5. Recordable injury rate per 100,000 hours worked:`,
-        `6. Lost time injuries and illness rate per 100,000 hours worked:`,
-
-      ],
-
-      secondary: [
-        `2017:`,
-        `2017:`,
-        `2017:`,
-        `2017:`,
-        `2017:`,
-        `2017:`,
-      ],
-
-      cta: `Next`,
-    }, // end of section 1
-
-
-
-    { // section 2
-      title: `G1 outcome data - Section 2 - Social`,
-
-      intro: `Next is outcome data for Social factors.`,
+      intro: `We need 3 types of outcome data from you. The first type involves Environment data.`,
 
       icons: [],
 
@@ -310,6 +279,38 @@ export default {
       ],
 
       cta: `Next`,
+    }, // end of section 1
+
+
+
+    { // section 2
+      title: `G1 outcome data - Section 2 - Social`,
+
+      intro: `Next is outcome data for Social factors.`,
+
+      icons: [],
+
+      questions: [
+        `1. Recordable injury rate per 100,000 hours worked:`,
+        `2. Lost time injuries and illness rate per 100,000 hours worked:`,
+        `3. Number of deaths of staff and contractors:`,
+        `4. Percentage of suppliers that are SMEs in 2018:`,
+        `5. Percentage of in-country procurement:`,
+        `6. Partnerships spend as percentage of revenues in 2018:`,
+        `7. Donated employee hours per 200,000 hours worked:`,
+      ],
+
+      secondary: [
+        `2017:`,
+        `2017:`,
+        `2017:`,
+        `2017:`,
+        `2017:`,
+        `2017:`,
+        `2017:`,
+      ],
+
+      cta: `Next`,
     }, // end of section 2
 
 
@@ -317,34 +318,26 @@ export default {
     { // section 3
       title: `G1 outcome data - Section 3 - Governance`,
 
-      intro: `Finally, please answer the questions about Governance.`,
+      intro: `Finally, we need outcome data for Governance.`,
 
       icons: [],
 
       questions: [
-        `1. Percentage of suppliers that are SMEs in 2018:`,
-        `2. Percentage of in-country procurement:`,
-        `3. Percentage of employees covered by collective bargaining agreements:`,
-
-        // These questions were previous in the Peace section:
-        `1. Percentage of identified child labour cases dealt with successfully within 12 months in 2018:`,
-        `2. Percentage of identified human rights cases dealt with successfully within 12 months:`,
-        `3. Percentage of conflicts with indigenous communities dealt with successfully in 12 months:`,
-
-        // These questions were previous in the Partnerships section:
-        `1. Partnerships spend as percentage of revenues in 2018:`,
-        `2. Donated employee hours per 200,000 hours worked:`,
+        `1. Percentage of board members who are female in 2018:`,
+        `2. Percentage of executive team members who are female:`,
+        `3. Percentage of senior managers who are female:`,
+        `4. Percentage of employees covered by collective bargaining agreements:`,
+        `5. Percentage of identified child labour cases dealt with successfully within 12 months in 2018:`,
+        `6. Percentage of identified human rights cases dealt with successfully within 12 months:`,
+        `7. Percentage of conflicts with indigenous communities dealt with successfully in 12 months:`,
       ],
 
       secondary: [
         `2017:`,
         `2017:`,
         `2017:`,
-
         `2017:`,
         `2017:`,
-        `2017:`,
-
         `2017:`,
         `2017:`,
       ],
