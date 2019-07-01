@@ -6,7 +6,7 @@ const Thanks = ({ content, setPage }) => {
   const t = content.thanks;
 
   return (
-    <Layout content={content}>
+    <Layout content={content} setPage={setPage}>
       <div className={css.thanks}>
         <p className={css.title}>{t.title}</p>
 

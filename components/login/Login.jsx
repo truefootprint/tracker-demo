@@ -5,7 +5,7 @@ const Login = ({ content, setPage }) => {
   const t = content.login;
 
   return (
-    <Layout content={content}>
+    <Layout content={content} setPage={setPage}>
       <div className={css.login}>
         <p className={css.title}>
           Create first login

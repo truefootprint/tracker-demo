@@ -4,7 +4,7 @@ import css from "./styles.scss";
 const Intro = ({ content, setPage }) => {
   const t = content.intro;
 
-  return <Layout content={content}>
+  return <Layout content={content} setPage={setPage}>
     <div className={css.intro}>
       <p dangerouslySetInnerHTML={{__html: t.para1}}></p>
       <p>&nbsp;</p>

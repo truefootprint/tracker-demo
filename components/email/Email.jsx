@@ -1,13 +1,18 @@
 import Image from "../image";
 import css from "./styles.scss";
 
-const Email = ({ content, setPage }) => {
+const Email = ({ content, setPage, framework }) => {
   const t = content.email;
 
   return <>
     <div className={css.header}>
       <Image src="email.svg" />
       <p>{t.header}</p>
+
+      <div className={css.frameworks}>
+        <a className={framework === "sdg" ? css.active : undefined} href="?framework=sdg">SDG</a>
+        <a className={framework === "esg" ? css.active : undefined} href="?framework=esg">ESG</a>
+      </div>
     </div>
 
     <div className={css.email}>

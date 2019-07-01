@@ -3,12 +3,14 @@ import Layout from "../layout";
 import Image from "../image";
 import css from "./styles.scss";
 
-const Form = ({ content, setPage }) => {
+const Form = ({ content, setPage, framework }) => {
   const [section, setSection] = useState(0);
-  const t = content.form[section];
+
+  const form = content[`${framework}_form`];
+  const t = form[section];
 
   const submit = () => {
-    if (section + 1 < content.form.length) {
+    if (section + 1 < form.length) {
       window.scrollTo(0, 0);
       setSection(section + 1);
     } else {
@@ -23,7 +25,7 @@ const Form = ({ content, setPage }) => {
   };
 
   return (
-    <Layout content={content}>
+    <Layout content={content} setPage={setPage}>
       <div className={css.form}>
         <p className={css.title}>{t.title}</p>
         <p className={css.intro}>{t.intro}</p>

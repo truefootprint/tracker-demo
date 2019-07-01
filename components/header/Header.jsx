@@ -1,12 +1,12 @@
 import Logo from "../logo";
 import css from "./styles.scss";
 
-const Header = ({ content }) => {
+const Header = ({ content, setPage }) => {
   const t = content.header;
 
   return (
     <div className={css.header}>
-      <a className={css.logo} href=".">
+      <a className={css.logo} onClick={() => setPage("email")}>
         <Logo variant="stackedText" />
       </a>
 

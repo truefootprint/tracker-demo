@@ -8,21 +8,30 @@ import Thanks from "../components/thanks";
 
 import content from "../static/content";
 
-const Index = () => {
+const Index = ({ query }) => {
   const [page, setPage] = useState("email");
+  const framework = getFrameworkFromUrl();
 
   const setPageAndScrollTop = (page) => {
     window.scrollTo(0, 0);
     setPage(page);
   };
 
+  const props = { content, setPage: setPageAndScrollTop, framework };
+
   return <>
-    {page === "email"  && <Email  content={content} setPage={setPageAndScrollTop} />}
-    {page === "intro"  && <Intro  content={content} setPage={setPageAndScrollTop} />}
-    {page === "login"  && <Login  content={content} setPage={setPageAndScrollTop} />}
-    {page === "form"   && <Form   content={content} setPage={setPageAndScrollTop} />}
-    {page === "thanks" && <Thanks content={content} setPage={setPageAndScrollTop} />}
+    {page === "email"  && <Email  {...props} />}
+    {page === "intro"  && <Intro  {...props} />}
+    {page === "login"  && <Login  {...props} />}
+    {page === "form"   && <Form   {...props} />}
+    {page === "thanks" && <Thanks {...props} />}
   </>;
+};
+
+const getFrameworkFromUrl = () => {
+  if (typeof window === "undefined") return "sdg";
+
+  return /esg/.test(window.location) ? "esg" : "sdg"
 };
 
 export default Index;

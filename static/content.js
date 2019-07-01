@@ -74,11 +74,8 @@ export default {
   },
 
 
-
-  // You can add as many sections and questions as you want.
-  form: [
-
-
+  // Framework: People, Planet, Peace, Prosperity, Partnerships
+  sdg_form: [
 
     { // section 1
       title: `G1 outcome data - Section 1 - People`,
@@ -241,6 +238,119 @@ export default {
 
       cta: `Next`,
     }, // end of section 5
+  ],
+
+  // Framework: Environment, Social, Governance
+  esg_form: [
+
+    { // section 1
+      title: `G1 outcome data - Section 1 - Environment`,
+
+      intro: `We need 2 types of outcome data from you. The first type involves Environment data.`,
+
+      icons: [],
+
+      questions: [
+        `1. Percentage of board members who are female in 2018:`,
+        `2. Percentage of executive team members who are female:`,
+        `3. Percentage of senior managers who are female:`,
+        `4. Number of deaths of staff and contractors:`,
+        `5. Recordable injury rate per 100,000 hours worked:`,
+        `6. Lost time injuries and illness rate per 100,000 hours worked:`,
+
+      ],
+
+      secondary: [
+        `2017:`,
+        `2017:`,
+        `2017:`,
+        `2017:`,
+        `2017:`,
+        `2017:`,
+      ],
+
+      cta: `Next`,
+    }, // end of section 1
+
+
+
+    { // section 2
+      title: `G1 outcome data - Section 2 - Social`,
+
+      intro: `Next is outcome data for Social factors.`,
+
+      icons: [],
+
+      questions: [
+        `1. Total greenhouse gas emissions (scope 1) in 2018:`,
+        `2. Total revenues in USD in 2018:`,
+        `3. Total ore production in metric tonnes:`,
+        `4. Total energy use in MwH:`,
+        `5. Total water use:`,
+        `6. Total hazardous waste:`,
+        `7. Total disposed waste:`,
+        `8. Percentage of energy from renewable sources:`,
+        `9. Percentage of water recycled:`,
+        `10. Percentage increase in biodiversity:`,
+        `11. Total amount paid in environmental fines:`,
+      ],
+
+      secondary: [
+        `2017:`,
+        `2017:`,
+        `2017:`,
+        `2017:`,
+        `2017:`,
+        `2017:`,
+        `2017:`,
+        `2017:`,
+        `2017:`,
+        `2017:`,
+        `2017:`,
+      ],
+
+      cta: `Next`,
+    }, // end of section 2
+
+
+
+    { // section 3
+      title: `G1 outcome data - Section 3 - Governance`,
+
+      intro: `Finally, please answer the questions about Governance.`,
+
+      icons: [],
+
+      questions: [
+        `1. Percentage of suppliers that are SMEs in 2018:`,
+        `2. Percentage of in-country procurement:`,
+        `3. Percentage of employees covered by collective bargaining agreements:`,
+
+        // These questions were previous in the Peace section:
+        `1. Percentage of identified child labour cases dealt with successfully within 12 months in 2018:`,
+        `2. Percentage of identified human rights cases dealt with successfully within 12 months:`,
+        `3. Percentage of conflicts with indigenous communities dealt with successfully in 12 months:`,
+
+        // These questions were previous in the Partnerships section:
+        `1. Partnerships spend as percentage of revenues in 2018:`,
+        `2. Donated employee hours per 200,000 hours worked:`,
+      ],
+
+      secondary: [
+        `2017:`,
+        `2017:`,
+        `2017:`,
+
+        `2017:`,
+        `2017:`,
+        `2017:`,
+
+        `2017:`,
+        `2017:`,
+      ],
+
+      cta: `Next`,
+    }, // end of section 3
   ],
 
 
