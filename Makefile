@@ -12,6 +12,7 @@ deploy:
 		cd out                                                            && \
 		touch .nojekyll                                                   && \
 		rm -rf index                                                      && \
+		echo tracker-demo.truefootprint.com > CNAME                       && \
 		git init                                                          && \
 		git add -A                                                        && \
 		git commit -m 'Deploy changes'                                    && \

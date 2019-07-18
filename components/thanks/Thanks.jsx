@@ -1,5 +1,4 @@
 import Layout from "../layout";
-import Image from "../image";
 import css from "./styles.scss";
 
 const Thanks = ({ content, setPage }) => {
@@ -17,10 +16,10 @@ const Thanks = ({ content, setPage }) => {
         <p>{t.para3}</p>
 
         <div className={css.images}>
-          <Image src={t.image1} />
-          <Image src={t.image2} />
-          <Image src={t.image3} />
-          <Image src={t.image4} />
+          <img src={t.image1} />
+          <img src={t.image2} />
+          <img src={t.image3} />
+          <img src={t.image4} />
         </div>
       </div>
     </Layout>

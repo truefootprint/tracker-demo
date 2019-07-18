@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Layout from "../layout";
-import Image from "../image";
 import css from "./styles.scss";
 
 const Form = ({ content, setPage, framework }) => {
@@ -32,7 +31,7 @@ const Form = ({ content, setPage, framework }) => {
 
         <div className={`${css.icons} ${t.icons.length > 4 && css.full_width}`}>
             {t.icons.map(src => (
-              <a key={src} href={goal(src)} target="_blank"><Image src={src} /></a>
+              <a key={src} href={goal(src)} target="_blank"><img src={src} /></a>
             ))}
         </div>
 

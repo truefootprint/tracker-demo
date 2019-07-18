@@ -29,7 +29,7 @@ export default {
             We have therefore enlisted the services of independent platform TrueFootprint who have created a form for you to fill out.
             Give me a ring if you need any help. See you next week in Paris!`,
 
-    link: `https://tracker.truefootprint.com/invite/5226-e0c2-f094`,
+    link: `https://tracker-demo.truefootprint.com/invite/5226-e0c2-f094`,
 
     para3: `Best, Roger.`,
 
@@ -84,8 +84,8 @@ export default {
               The first type involves People data. These relate to Sustainable Development Goals 3 and 5.`,
 
       icons: [
-        `sustainable-development-goals/3-good-health-and-well-being.png`,
-        `sustainable-development-goals/5-gender-equality.png`,
+        `/static/sustainable-development-goals/3-good-health-and-well-being.png`,
+        `/static/sustainable-development-goals/5-gender-equality.png`,
       ],
 
       questions: [
@@ -119,12 +119,12 @@ export default {
               These relate to Sustainable Development Goals 6, 7, 12, 13, 14, and 15.`,
 
       icons: [
-        `sustainable-development-goals/6-clean-water-and-sanitation.png`,
-        `sustainable-development-goals/7-affordable-and-clean-energy.png`,
-        `sustainable-development-goals/12-responsible-consumption-and-production.png`,
-        `sustainable-development-goals/13-climate-action.png`,
-        `sustainable-development-goals/14-life-below-water.png`,
-        `sustainable-development-goals/15-life-on-land.png`,
+        `/static/sustainable-development-goals/6-clean-water-and-sanitation.png`,
+        `/static/sustainable-development-goals/7-affordable-and-clean-energy.png`,
+        `/static/sustainable-development-goals/12-responsible-consumption-and-production.png`,
+        `/static/sustainable-development-goals/13-climate-action.png`,
+        `/static/sustainable-development-goals/14-life-below-water.png`,
+        `/static/sustainable-development-goals/15-life-on-land.png`,
       ],
 
       questions: [
@@ -166,10 +166,10 @@ export default {
       intro: `The Prosperity questions relate to Sustainable Development Goals 8, 9, 10 and 11.`,
 
       icons: [
-        `sustainable-development-goals/8-decent-work-and-economic-growth.png`,
-        `sustainable-development-goals/9-industry-innovation-and-infrastructure.png`,
-        `sustainable-development-goals/10-reduced-inequalities.png`,
-        `sustainable-development-goals/11-sustainable-cities-and-communities.png`,
+        `/static/sustainable-development-goals/8-decent-work-and-economic-growth.png`,
+        `/static/sustainable-development-goals/9-industry-innovation-and-infrastructure.png`,
+        `/static/sustainable-development-goals/10-reduced-inequalities.png`,
+        `/static/sustainable-development-goals/11-sustainable-cities-and-communities.png`,
       ],
 
       questions: [
@@ -195,7 +195,7 @@ export default {
       intro: `The Peace questions relate to Sustainable Development Goal 16.`,
 
       icons: [
-        `sustainable-development-goals/16-peace-justice-and-strong-institutions.png`,
+        `/static/sustainable-development-goals/16-peace-justice-and-strong-institutions.png`,
       ],
 
       questions: [
@@ -220,10 +220,10 @@ export default {
       intro: `The Partnerships questions relate to Sustainable Development Goals 1, 2, 4 and 17.`,
 
       icons: [
-        `sustainable-development-goals/1-no-poverty.png`,
-        `sustainable-development-goals/2-zero-hunger.png`,
-        `sustainable-development-goals/4-quality-education.png`,
-        `sustainable-development-goals/17-partnerships-for-the-goals.png`,
+        `/static/sustainable-development-goals/1-no-poverty.png`,
+        `/static/sustainable-development-goals/2-zero-hunger.png`,
+        `/static/sustainable-development-goals/4-quality-education.png`,
+        `/static/sustainable-development-goals/17-partnerships-for-the-goals.png`,
       ],
 
       questions: [
@@ -355,9 +355,9 @@ export default {
     para2: `We have notified asset company XYZ you have made these submissions.`,
     para3: `Asset managers really like data that has been verified independently by an auditor. If you already have your annual report audited by a third party, please select the logo of yours and you can invite them to audit these numbers.`,
 
-    image1: `kpmg.svg`,
-    image2: `deloitte.svg`,
-    image3: `pwc.svg`,
-    image4: `ey.svg`,
+    image1: `/static/kpmg.svg`,
+    image2: `/static/deloitte.svg`,
+    image3: `/static/pwc.svg`,
+    image4: `/static/ey.svg`,
   },
 };

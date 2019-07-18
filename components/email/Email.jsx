@@ -1,4 +1,3 @@
-import Image from "../image";
 import css from "./styles.scss";
 
 const Email = ({ content, setPage, framework }) => {
@@ -6,7 +5,7 @@ const Email = ({ content, setPage, framework }) => {
 
   return <>
     <div className={css.header}>
-      <Image src="email.svg" />
+      <img src="/static/email.svg" />
       <p>{t.header}</p>
 
       <div className={css.frameworks}>
