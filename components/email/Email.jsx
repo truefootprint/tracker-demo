@@ -12,6 +12,8 @@ const Email = ({ content, setPage, framework }) => {
         <a className={framework === "sdg" ? css.active : undefined} href="?framework=sdg">SDG</a>
         <a className={framework === "esg" ? css.active : undefined} href="?framework=esg">ESG</a>
       </div>
+
+      <a href="/videos">Videos</a>
     </div>
 
     <div className={css.email}>
